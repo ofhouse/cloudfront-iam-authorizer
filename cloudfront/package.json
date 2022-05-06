@@ -1,0 +1,24 @@
+{
+  "name": "@stacks/cloudfront",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build:cdk": "tsc",
+    "build:lambda": "ncc-zip build -f handler edge-lambda/handler.ts",
+    "build": "pnpm run build:cdk && pnpm run build:lambda"
+  },
+  "dependencies": {
+    "@aws-crypto/sha256-js": "^2.0.1",
+    "@aws-sdk/signature-v4": "^3.78.0",
+    "aws-cdk-lib": "^2.0.0",
+    "constructs": "^10.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/aws-lambda": "^8.10.95",
+    "@types/node": "^14.0.0",
+    "@vercel/ncc": "^0.33.4",
+    "ncc-zip": "^2.0.0"
+  }
+}

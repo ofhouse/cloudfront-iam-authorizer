@@ -1,0 +1,14 @@
+{
+  "name": "cloudfront-iam-authorizer",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "build": "turbo run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "turbo": "^1.2.8"
+  }
+}
